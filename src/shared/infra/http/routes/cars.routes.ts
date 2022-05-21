@@ -24,7 +24,7 @@ carsRoutes.post(
   "/specifications/:id",
   ensureAuthenticated,
   ensureAdmin,
-  createCarController.handle
+  createCarSpecificationController.handle
 );
 
 export { carsRoutes };
