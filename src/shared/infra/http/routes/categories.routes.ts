@@ -23,12 +23,7 @@ categoriesRoutes.post(
   createCategoryController.handle
 );
 
-categoriesRoutes.get(
-  "/",
-  ensureAuthenticated,
-  ensureAdmin,
-  listCategoriesController.handle
-);
+categoriesRoutes.get("/", listCategoriesController.handle);
 
 categoriesRoutes.post(
   "/import",
